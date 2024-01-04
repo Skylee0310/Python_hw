@@ -61,7 +61,7 @@ if False :
             print('정확한 데이터가 아닙니다.')
     print('코드 끝')
 
-if False : 
+if False :
     isEnd = False #flag 변수
 
     for n in range(100):
