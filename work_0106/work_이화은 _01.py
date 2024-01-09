@@ -4,10 +4,10 @@
 # msg.sort()
 # print(f"정렬 결과 : [{msg}]\n가장 높은 문자열 : {max(msg)}, 가장 낮은 문자열 :{min(msg)}")
 
-def msg_check(*args) :
-    msg = sorted(args, reverse=True)
-    return msg, max(msg), min(msg)
-
 msg = input("문자열 입력 : ").split()
+def msg_check(args) :
+     args.sort()
+     return msg, max(msg), min(msg)
+
 result, max_msg, min_msg = msg_check(msg)
-print(f"정렬 결과 : [{result}]\n가장 높은 문자열 : {max_msg}, 가장 낮은 문자열 :{min_msg}")
+print(f"정렬 결과 : {result}\n가장 높은 문자열 : {max_msg}, 가장 낮은 문자열 :{min_msg}")
